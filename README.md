@@ -60,9 +60,8 @@ Self-hosted, privacy-first platform that aggregates, analyzes, visualizes, and p
 data-mind/
 ├── backend/
 │   ├── app/
-│   │   ├── __init__.py
-│   │   ├── main.py
-│   │   ├── models/
+│   │   ├── app.py
+│   │   ├── models.py
 │   │   ├── routes/
 │   │   ├── services/
 │   │   ├── assistants/
