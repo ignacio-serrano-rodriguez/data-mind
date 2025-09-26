@@ -46,7 +46,7 @@ Self-hosted, privacy-first platform that aggregates, analyzes, visualizes, and p
 
 ## Architecture
 - **Database:** SQLite.
-- **Backend:** Python with Flask.
+- **Backend:** Python 3.13 with Flask.
 - **Python Environment:** venv (virtual environment manager).
 - **Data Science:** Pandas, NumPy, Matplotlib, and Seaborn.
 - **LLM/AI Assistant:** llama-cpp, Transformers, LangChain or LlamaIndex (for Retrieval-Augmented Generation and chat with local LLMs like Llama, Mistral, etc.).
