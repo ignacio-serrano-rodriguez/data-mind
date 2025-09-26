@@ -22,17 +22,6 @@ Self-hosted, privacy-first platform that aggregates, analyzes, visualizes, and p
   - Modular and extensible: easily add new data sources or analytics modules.
   - Customizable dashboards, assistants, and agent actions.
 
-## Architecture
-- **Database:** SQLite.
-- **Backend:** Python with Flask.
-- **Python Environment:** venv (virtual environment manager).
-- **Data Science:** Pandas, NumPy, Matplotlib, and Seaborn.
-- **LLM/AI Assistant:** llama-cpp, Transformers, LangChain or LlamaIndex (for Retrieval-Augmented Generation and chat with local LLMs like Llama, Mistral, etc.).
-- **ML/DL (future):** TensorFlow, PyTorch, scikit-learn (for custom machine learning/deep learning features).
-- **Connectors:** OAuth libraries and API keys for data sources.
-- **Frontend:** Jinja2, HTML/CSS/JS, Chart.js or Plotly for interactive visualizations.
-- **Deployment:** Ubuntu server.
-
 ## Use Cases
 - Quantified-self & life-logging.
 - Personal finance, health, and productivity analytics.
@@ -54,3 +43,51 @@ Self-hosted, privacy-first platform that aggregates, analyzes, visualizes, and p
 - "Any unusual activity in my bank account?"
 - "Update my calendar to add a doctor's appointment for next Monday."
 - "Auto-categorize my latest expenses."
+
+## Architecture
+- **Database:** SQLite.
+- **Backend:** Python with Flask.
+- **Python Environment:** venv (virtual environment manager).
+- **Data Science:** Pandas, NumPy, Matplotlib, and Seaborn.
+- **LLM/AI Assistant:** llama-cpp, Transformers, LangChain or LlamaIndex (for Retrieval-Augmented Generation and chat with local LLMs like Llama, Mistral, etc.).
+- **ML/DL (future):** TensorFlow, PyTorch, scikit-learn (for custom machine learning/deep learning features).
+- **Connectors:** OAuth libraries and API keys for data sources.
+- **Frontend:** Jinja2, HTML/CSS/JS, Chart.js or Plotly for interactive visualizations.
+- **Deployment:** Ubuntu server.
+
+## Directory tree
+```
+data-mind/
+├── backend/
+│   ├── app/
+│   │   ├── __init__.py
+│   │   ├── main.py
+│   │   ├── models/
+│   │   ├── routes/
+│   │   ├── services/
+│   │   ├── assistants/
+│   │   ├── agents/
+│   │   └── utils/
+│   ├── requirements.txt
+│   └── venv/
+├── data/
+│   ├── uploads/
+│   └── exports/
+├── frontend/
+│   ├── static/
+│   │   ├── css/
+│   │   ├── js/
+│   │   └── images/
+│   ├── templates/
+│   └── package.json
+├── connectors/
+│   ├── health/
+│   ├── finance/
+│   ├── productivity/
+│   └── ...
+├── scripts/
+│   └── (utility scripts for setup, migration, etc.)
+├── tests/
+│   ├── backend/
+│   └── frontend/
+```
